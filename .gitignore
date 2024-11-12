@@ -2,3 +2,7 @@ dagster_home/
 mlruns/
 poetry.lock
 *.egg-info
+__pycache__
+ml-32m
+data/
+mlartifacts/
