@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "recommender-system"
+version = "0.1.0"
+description = "Curso ITBA"
+authors = ["Julian Ganzabal <jganzabal@seenka.com>"]
+readme = "README.md"
+exclude = ["recommender_system_tests"]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+numpy = "<2.1.0"
+mlflow = "^2.17.2"
+dagster = "^1.9.1"
+dagster-mlflow = "^0.25.1"
+tensorflow = "^2.18.0"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.dagster]
+module_name = "recommender_system.definitions"
+project_name = "recommender_system"
