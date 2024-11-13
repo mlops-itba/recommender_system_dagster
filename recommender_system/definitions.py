@@ -24,7 +24,6 @@ data_job = define_asset_job(
 
 asset_partitioned_schedule = build_schedule_from_partitioned_job(
     partitioned_job,
-    # tags={'dagster/partition_set': get_multi_partition_definition(["Nota@Argentina"])}
 )
 
 defs = Definitions(
